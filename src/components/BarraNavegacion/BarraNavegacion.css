@@ -1,0 +1,38 @@
+.barra-navegacion-upc {
+  background-color: var(--color-amarillo-principal);
+  border-bottom: 1px solid var(--color-amarillo-oscuro);
+}
+
+.barra-navegacion-upc .navbar-brand {
+  color: var(--color-texto-principal);
+  font-weight: 700;
+}
+
+.barra-navegacion-upc .nav-link {
+  color: var(--color-texto-principal);
+  font-weight: 600;
+}
+
+.barra-navegacion-upc .nav-link:hover,
+.barra-navegacion-upc .nav-link:focus {
+  color: var(--color-texto-principal);
+}
+
+.logo-upc-circulo {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 52px;
+  overflow: hidden;
+  border: 2px solid var(--color-borde-oscuro);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.logo-upc-circulo img {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+}

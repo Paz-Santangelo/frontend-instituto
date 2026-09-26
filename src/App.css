@@ -1,0 +1,25 @@
+:root {
+  --color-amarillo-principal: #ffd600;
+  --color-amarillo-oscuro: #d1ad00;
+  --color-amarillo-claro: #fff1a8;
+  --color-amarillo-suave: #fffbea;
+  --color-texto-principal: #292929;
+  --color-borde-oscuro: #555;
+}
+
+.pagina-alumnos h1 {
+  color: var(--color-texto-principal);
+}
+
+.pagina-home h1 {
+  color: var(--color-texto-principal);
+}
+
+.tabla-alumnos thead th {
+  background-color: var(--color-amarillo-claro);
+  color: var(--color-texto-principal);
+}
+
+.tabla-alumnos tbody tr:hover > * {
+  --bs-table-bg-state: var(--color-amarillo-suave);
+}

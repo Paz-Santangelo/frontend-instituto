@@ -41,6 +41,14 @@ export const guardarAlumno = async (alumnoDto) => {
   return respuesta.data
 }
 
+// POST /api/alumnos/guardar-con-legajo
+// Body: { nombre, apellido, idUsuario?, legajo: { numero } }
+// Retorna: AlumnoDtoResponse con el legajo creado.
+export const guardarAlumnoLegajo = async (alumnoConLegajoDto) => {
+  const respuesta = await clienteAxios.post('/api/alumnos/guardar-con-legajo', alumnoConLegajoDto)
+  return respuesta.data
+}
+
 // DELETE /api/alumnos/eliminar/{id}
 // Retorna: nada (el backend responde 200 sin cuerpo)
 export const eliminarAlumno = async (id) => {
